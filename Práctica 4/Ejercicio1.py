@@ -10,19 +10,3 @@ with open("/Users/frana/Downloads/UCEMA_Fundamentos_de_informatica-master/Python
 
 print(len(ocurrencias))
 
-
-#Ejercicio 2
-
-#Ejercicio 2
-
-#Ejercicio 2
-
-#Ejercicio 2
-
-#Ejercicio 2
-
-#Ejercicio 2
-
-#Ejercicio 2
-
-
