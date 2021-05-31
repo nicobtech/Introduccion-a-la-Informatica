@@ -14,7 +14,7 @@ class celular(tecnologia):
 
 
  class notebook(tecnologia):
-     def utilizar(self minutos)
+     def utilizar(self, minutos):
         self.bateria -= minutos
 
 un_celu = celular(tecnologia)
