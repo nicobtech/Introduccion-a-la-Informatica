@@ -31,18 +31,26 @@ print(df)
 # cree otro diccionario con las mismas claves, pero donde los valores sean una lista de números donde 
 # se potencia un número por el siguiente, tomándolos de a pares. Para ser más claros miremos este ejemplo 
 # donde si un diccionario es:
+import pandas as pd
 
 dict1 = {"a": [1,3,5,2], "b": [4,2,3,5]}
 dict2 = {}
-for clave in dict1.keys():
-    dict2[clave] = []
-    for numero in dict1[clave]:
-        if dict1[clave].index(numero)%2==0:
-            dict2[clave].append(numero**dict1[clave][(dict1[clave].index(numero))+1])
+for clave,valor in dict1.items():
+    pares = []
+    impares = []
+    potencia = []
+    for i in range(0,len(valor), 2):
+        pares.append(valor[i])
+    for i in range(1, len(valor), 2):
+        impares.append(valor[i])
+    for i in range(len(pares)):
+        potencia.append(pares[i]** impares[i])
+    dict2[clave] = potencia
+
 print(dict2)
 
-df3=pd.DataFrame(dict2)
-df3            
+new_df = pd.DataFrame(dict2)
+print(new_df)            
 
 #Ejercicio 5
 #Realizá un programa para crear y mostrar un DataFrame a partir de un diccionario y de unas etiquetas (o labels).
