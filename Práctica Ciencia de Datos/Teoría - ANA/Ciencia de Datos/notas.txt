@@ -1,0 +1,15 @@
+pandas.read_csv
+
+sep: indica cómo separar los elementos. Por defecto es la coma
+(comma-separated values), pero se puede modificar.
+
+header: sii no se le pasa una lista de encabezados toma la primera fila como
+encabezado. Se puede seleccionar cualquier fila como encabezado. Si no tiene
+encabezado y no se quiere usar ninguna de los datos se utiliza None.
+
+dtype: indica el tipo de datos del data frame. Por defecto detecta el tipo de datos
+por columna.
+
+skiprows: ignora un número de filas. Por defecto es 0.
+
+nrows: cantidad de líneas que se leen del archivo. Sirve cuando el archivo es muy grande.
