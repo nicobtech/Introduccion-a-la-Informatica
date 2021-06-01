@@ -13,3 +13,13 @@ por columna.
 skiprows: ignora un número de filas. Por defecto es 0.
 
 nrows: cantidad de líneas que se leen del archivo. Sirve cuando el archivo es muy grande.
+
+df.head: muestra un número dado de la parte inicial del data frame. Por defecto su valor es 5.
+
+df.tail: de igual manera, muestra un número dado del final del data frame. Por defecto su valor es 5.
+
+df.max(): nos dice el valor máximo por columna.
+
+df.min(): ídem al anterior pero con el valor mínimo.
+
+df.count(): devuelve la cantidad de datos no nulos de cada columna.
